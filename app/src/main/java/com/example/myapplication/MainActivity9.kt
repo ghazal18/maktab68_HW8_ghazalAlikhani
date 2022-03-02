@@ -6,6 +6,7 @@ import android.content.Intent
 import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.text.method.TextKeyListener.clear
 import android.view.View
 import com.example.myapplication.databinding.ActivityMain7Binding
 import com.example.myapplication.databinding.ActivityMain9Binding
@@ -22,13 +23,29 @@ class MainActivity9 : AppCompatActivity() {
 
         showInfoWhenPageOpen()
         binding.changeInfo.setOnClickListener(::changeInfoButton)
+        binding.newInfo.setOnClickListener(::goToLastActivity)
 
+    }
+
+    private fun goToLastActivity(view: View?) {
+        deleteInfo()
+        val intent = Intent(this,MainActivity7::class.java)
+        startActivity(intent)
+    }
+
+    private fun deleteInfo() {
+        sp.edit().remove("id").apply()
+        sp.edit().remove("address").apply()
+        sp.edit().remove("postId").apply()
+        sp.edit().remove("birthday").apply()
+        sp.edit().remove("name").apply()
     }
 
     private fun changeInfoButton(view: View?) {
         val intent = Intent(this,MainActivity7::class.java)
         startActivity(intent)
     }
+
 
     private fun showInfoWhenPageOpen() {
         var id = sp.getString("id", "")
