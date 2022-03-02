@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity9">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="مشاهده اطلاعات ثبت شده"
+        android:textSize="22sp"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:background="@color/green"
+        android:layout_margin="8dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/showId"
+        android:text="@string/id"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_margin="8dp"
+        android:background="@color/gray"
+        android:padding="10dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/showAddress"
+        android:text="@string/address"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_margin="8dp"
+        android:background="@color/gray"
+        android:padding="10dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/showBirthday"
+        android:text="@string/birthday"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_margin="8dp"
+        android:background="@color/gray"
+        android:padding="10dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/showPostCode"
+        android:text="@string/post"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_margin="8dp"
+        android:background="@color/gray"
+        android:padding="10dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/showGender"
+        android:text="@string/gender"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_margin="8dp"
+        android:background="@color/gray"
+        android:padding="10dp" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/changeInfo"
+        android:textColor="@color/black"
+        android:layout_margin="8dp"
+        android:background="@color/gray"
+        android:padding="10dp"
+        android:textSize="22sp"
+        android:text="تغییر اطلاعات"/>
+
+
+
+
+</LinearLayout>

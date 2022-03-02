@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="25dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity7">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#9BE19E"
+        android:gravity="center_vertical"
+        android:paddingEnd="20sp"
+        android:text="فرم ثبت اطلاعات   "
+        android:textColor="#2E7D32"
+        android:textSize="22sp" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="نام و نام خانوادگی "
+        android:inputType="textPersonName"
+        android:textColorHint="#4E4E4E" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonid2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="کد ملی"
+        android:inputType="textPersonName"
+        android:textColorHint="#4E4E4E" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonDate3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="محل تولد"
+        android:inputType="textPersonName"
+        android:textColorHint="#4E4E4E" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonAddress4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="ادرس"
+        android:inputType="textPersonName"
+        android:textColorHint="#4E4E4E" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonPostId5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="کد پستی"
+        android:inputType="textPersonName"
+        android:textColorHint="#4E4E4E" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="جنسیت:"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="مرد" />
+
+        <RadioButton
+            android:id="@+id/radioButton4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:text="زن" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/buttonSetInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="ثبت اطلاعات " />
+</LinearLayout>
